@@ -110,6 +110,7 @@
     margin: 0.1em;
     width: 99%;
     flex-grow: 3;
+    word-break: break-all;
   }
   p:hover, p:focus{
     color: var(--bg-color2);
@@ -118,4 +119,16 @@
 
   .strike{
     text-decoration: line-through;
+  }
+
+  @media (max-width: 455px) {
+    .list-input{
+      flex-direction: column;
+    }
+    button{
+      width: 60%;
+    }
+    body{
+      font-size: 18px;
+    }
   }

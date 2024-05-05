@@ -1,0 +1,121 @@
+/* reset.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif; /* Set your preferred default font */
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    line-height: 1.6; /* Adjust line height as needed */
+  }
+  
+  ul, ol {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit; /* Inherit text color from parent element */
+  }
+  
+  img {
+    border: none;
+  }
+  
+  input, button, textarea, select {
+    font: inherit; /* Inherit font properties */
+  }
+  /* reset.css */
+  :root{
+    --primary: #0c0c0c;
+    --secondary: #002756;
+    --accent: #035b7a;
+    --bg-color1: #c6c3b6;
+    --bg-color2: #eaeaea;
+    --bg-color3: #dddace;
+  }
+
+  body{
+    background: var(--bg-color2)/*linear-gradient(to left top, var(--bg-color1), var(--bg-color2))*/;
+    color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 0.5em 1em;
+    overflow: scroll;
+  }
+  header{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+  }
+
+  main{
+    background: var(--bg-color1);
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;  /* Align items horizontally */
+    align-items: flex-start;  /* Align items vertically */
+    padding: 0.2em;
+    margin: 1rem;
+    width: 65%;
+  }
+  input{
+    padding: 0.4em;
+    border: none;
+    color: var(--secondary);
+    margin: 0px;
+    flex-grow: 3;
+    outline: none;
+  }
+  button{
+    padding: 0.4em;
+    border: none;
+    color: var(--secondary);
+    margin: 0px;
+    flex-grow: 1;
+  }
+  button:hover, button:focus{
+    color: var(--bg-color2);
+    background: var(--secondary);
+  }
+
+  .list-input, div{
+    padding: 0px;
+    margin: 0.4em;
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  div:nth-of-type(2){
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  p{
+    background: var(--bg-color3);
+    padding: 0.7em;
+    margin: 0.1em;
+    width: 99%;
+    flex-grow: 3;
+  }
+  p:hover, p:focus{
+    color: var(--bg-color2);
+    background: var(--secondary);
+  }
+
+  .strike{
+    text-decoration: line-through;
+  }
